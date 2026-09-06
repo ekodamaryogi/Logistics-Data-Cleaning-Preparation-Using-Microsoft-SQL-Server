@@ -1,8 +1,23 @@
-# Logistics-Data-Cleaning-Preparation-Using-Microsoft-SQL-Server
-
+Logistics Data Cleaning & Preparation Using Microsoft SQL Server
 Project Overview
 This project focuses on cleaning and preparing a logistics dataset using Microsoft SQL Server.
 The data cleaning process was performed directly in Microsoft SQL Server (MSSQL) to ensure that the dataset was consistent, complete, and ready for further exploratory data analysis and dashboard development.
+Data & Project Files
+The project uses the following files and data sources:
+File / Data	Format	Description
+ShippingLogistics	CSV	Original/raw logistics dataset imported into Microsoft SQL Server
+ShippingLogisticsCleaning	CSV	Cleaned and prepared version of the logistics dataset
+Logistics Data Cleaning.sql	SQL	T-SQL script containing the data inspection, cleaning, transformation, and validation processes
+Database Structure
+The raw ShippingLogistics CSV file was imported into the LogistikDB database in Microsoft SQL Server.
+The cleaning workflow uses the following table structure:
+ShippingLogistics
+→ Original imported data
+ShippingLogistics_Cleaning
+→ Working table used for cleaning and transformation
+ShippingLogistics_Cleaned
+→ Final cleaned dataset prepared for analysis
+The original data was preserved by creating a separate working table before performing any transformations.
 Objectives
 The main objectives of this project were to:
 •	Identify missing values across all columns.
